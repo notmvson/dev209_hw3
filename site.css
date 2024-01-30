@@ -2,9 +2,47 @@ body {
     margin: 50px;
     font-family: Helvetica, sans-serif;
     font-size: 150%;
+    background-color: #CC232A;
+    
 }
 
 h2 {
+    background-color: #F5AC27;
+    width: 500px;
     text-align: center;
+    color: #00754b;
+    margin: 0 auto 20px;
+    line-height: 50px;
+    border: 8px solid #00754b;
 }
 
+#userType, #newUserInfo, #existingUserInfo {
+    width: 500px;
+    background-color: #FFD84B;
+    border-color: #CC9902;
+    border-width: 21px;
+}
+
+legend {
+    color: #00754b;
+    font-weight: bold;
+}
+
+#sectionOne, #sectionTwo, #sectionThree {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+#newUserInfo label {
+    display: inline-block;
+    width: 125px;
+    text-align: left;
+}
+#existingUserInfo label {
+    display: inline-block;
+    width: 125px;
+    text-align: left;
+}
