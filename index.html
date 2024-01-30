@@ -2,12 +2,59 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>HW2</title>
+        <title>HW3</title>
         <link rel="stylesheet" type=""text/css" href="site.css">
     </head>
 
     <body>
-        <h2>Homework 2</h2>
+        <h2>Homework 3</h2>
+
+        <form name="formOne" onsubmit="return false">
+            <fieldset id="userType">
+                <legend>Welcome to Useless Website</legend>
+                <button type="button" id="newUser" onclick="">Click for New User</button>
+                <button type="button" id="existingUser" onclick="">Click for Existing User</button>
+            </fieldset>
+        
+        </form>
+        <br>
+
+        <form name="newUserForm" onsubmit="return false">
+            <fieldset id="newUserInfo">
+                <legend>New User</legend>
+
+                <label for="newUserName">UserName: </label>
+                <input name="newUserName" id="newUserName" type="text" />
+
+                <label for="newPassword">Password: </label>
+                <input name="newPassword" id="newPassword" type="text" />
+                <br>
+
+                <label for="city">City: </label>
+                <input name="city" id="city" placeholder="Seattle" type="text" />
+
+                <label for="state">State (abbr.)</label>
+                <input name="state" id="state" placeholder="WA" type="text" />
+
+                <button type="button" id="newLoginButton" onclick="">Login</button>
+
+            </fieldset>
+        </form>
+        <br>
+
+        <form name="existingUserForm" onsubmit="return false">
+            <fieldset id="existingUserInfo">
+                <legend>Existing User</legend>
+
+                <label for="existingUserName">UserName: </label>
+                <input name="existingUserName" id="existingUserName" type="text" />
+
+                <label for="existingPassword">Password: </label>
+                <input name="existingPassword" id="existingPassword" type="text" />
+
+                <button type="button" id="existingLoginButton" onclick="">Login</button>
+            </fieldset>
+        </form>
 
 
         <script src="main.js"></script>
